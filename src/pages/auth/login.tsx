@@ -5,13 +5,11 @@ import {
 } from "next";
 import { getProviders } from "next-auth/react";
 
-const LoginPage = ({
+export default function LoginPage({
   providers,
-}: InferGetServerSidePropsType<typeof getServerSideProps>) => {
+}: InferGetServerSidePropsType<typeof getServerSideProps>) {
   return <LoginScreen providers={providers} />;
-};
-
-export default LoginPage;
+}
 
 export const getServerSideProps: GetServerSideProps<{
   providers: Awaited<ReturnType<typeof getProviders>>;
