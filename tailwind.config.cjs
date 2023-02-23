@@ -7,6 +7,12 @@ module.exports = {
         epilogue: "Epilogue",
         inter: "Inter",
       },
+      colors: {
+        default: {
+          primary: "#DFECF1",
+          secondary: "#D0E1E9",
+        },
+      },
     },
   },
   plugins: [],
