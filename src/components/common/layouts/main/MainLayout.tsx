@@ -9,7 +9,9 @@ const MainLayout: FC<IMainLayout> = ({ children }) => {
   return (
     <div className="relative min-h-screen bg-default-primary font-epilogue">
       <Navbar />
-      <main className="py-8 pl-24">{children}</main>
+      <main className="pl-24 pr-6">
+        {status === "loading" ? <LoadingScreen /> : <>{children}</>}
+      </main>
     </div>
   );
 };
