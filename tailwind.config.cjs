@@ -11,6 +11,7 @@ module.exports = {
         default: {
           primary: "#DFECF1",
           secondary: "#D0E1E9",
+          darkgray: "#555555",
         },
       },
       animation: {
