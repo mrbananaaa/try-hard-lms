@@ -24,9 +24,7 @@ const LoginScreen: NextPage<ILoginScreen> = ({ providers }) => {
               <div key={name}>
                 <button
                   className="w-full rounded border-2 border-transparent bg-white py-2.5 text-lg font-semibold text-black duration-300 hover:border-white hover:bg-black hover:text-white"
-                  onClick={() =>
-                    signIn(id, { redirect: true, callbackUrl: "/" })
-                  }
+                  onClick={() => signIn(id, { redirect: false })}
                 >
                   Login with {name}
                 </button>
