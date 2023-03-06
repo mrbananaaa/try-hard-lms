@@ -11,6 +11,7 @@ module.exports = {
         default: {
           primary: "#DFECF1",
           secondary: "#D0E1E9",
+          gray: "#D9D9D9",
           darkgray: "#555555",
         },
       },
@@ -19,5 +20,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp"), require("tailwind-scrollbar")],
 };
